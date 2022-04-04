@@ -11,7 +11,7 @@ const cors = require('cors');
 
 app.use(cors());
 
-connectDB("mongodb://whiteb1r:Vnknd23yYK9MBcc@cluster0-shard-00-00.qjfic.mongodb.net:27017,cluster0-shard-00-01.qjfic.mongodb.net:27017,cluster0-shard-00-02.qjfic.mongodb.net:27017/myFirstDatabase?ssl=true&replicaSet=atlas-s82vzo-shard-0&authSource=admin&retryWrites=true&w=majority")
+connectDB(process.env.MONGO_URI)
 
 // const multer = require('multer');
 
