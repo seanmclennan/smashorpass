@@ -8,7 +8,7 @@ function Cards() {
 
   useEffect(() => {
     async function fetchData() {
-      const req = await axios.get("http://localhost:5000/api/v1/cards");
+      const req = await axios.get("https://smash-or-pass-game.herokuapp.com/api/v1/cards");
   
       setPeople(req.data)
     }

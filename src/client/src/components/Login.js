@@ -10,7 +10,7 @@ function Login() {
   const [image, setImage] = useState("");
 
   const createUser = () => {
-      Axios.post("http://localhost:5000/api/v1/cards", {
+      Axios.post("https://smash-or-pass-game.herokuapp.com/api/v1/cards", {
           name, 
           age, 
           image,
